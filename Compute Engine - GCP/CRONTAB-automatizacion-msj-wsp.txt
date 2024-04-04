@@ -1,0 +1,10 @@
+-- Utilizamos CRONTAB para realizar la programación de ejecución de tareas
+
+-- En la carpeta de los script, agregamos el siguiente codigo para que lo ejecute todos los días a cada hora
+-- A su vez generará un archivo "stats_script.log" con la información de la ejecución
+
+$ crontab -e
+0 * * * * /usr/bin/python3 /home/carlos/Datos/Proyecto_Envio_ValorTP_Criptomonedas_GCP/Twilio_wsp/twilio_script_msj_wsp.py >> /home/carlos/Datos/Proyecto_Envio_ValorTP_Criptomonedas_GCP/Twilio_wsp/stats_script.log 2>&1
+
+-- Listar las programaciones
+$ crontab -l

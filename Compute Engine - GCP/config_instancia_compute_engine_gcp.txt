@@ -1,0 +1,30 @@
+-- Instalar Python y librerías 
+
+1) sudo apt update && sudo apt upgrade
+
+3) sudo apt install -y python3-pip
+
+3) Clonar repositorio con los archivos .py en github(requerimientos.txt  CoinAPI_key_config.py, funciones_df_crip_tc.py, twilio_script_msj_wsp.py, twilio_wsp_config.py)
+$ git clone https://github.com/CarlosGil2001/Datos
+
+4) pip3 install -r requerimientos.txt
+5) pip3 install -r requerimientos_wc.txt
+
+
+
+-- Instalación necesaria para el Web Scraping (La version de Google Chrome y ChromeDriver deben ser compatibles)
+ 
+Descarga el paquete de instalación de Google Chrome para Ubuntu: 
+6) wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+Instala el paquete de instalación de Google Chrome: 
+7) sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+Instalar el controlador para Ubuntu
+8)wget https://chromedriver.storage.googleapis.com/114.0.5735.198/chromedriver_linux64.zip
+
+Descomprimir el controlador
+9)unzip chromedriver_linux64.zip
+
+Moverlo a una ruta accesible
+10)sudo mv chromedriver /usr/local/bin/
